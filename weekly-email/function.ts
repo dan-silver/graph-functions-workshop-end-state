@@ -5,7 +5,7 @@ import { User, Message } from '@microsoft/microsoft-graph-types'
 import { getUsersWithExtensions, sortUsersOnNumCalEvents, sendMailReport } from "../graph-helpers";
 
 
-export async function main (context, req) {
+export async function main (context?, req?) {
     if (context) context.log("Starting Azure function!");
 
     // GET /beta/users&$expand=extensions
@@ -20,4 +20,4 @@ export async function main (context, req) {
     sendMailReport(users);
 };
 
-main(null, null);
+main();

@@ -24,5 +24,5 @@ function main(context, req) {
 }
 exports.main = main;
 ;
-main(null, null);
+main();
 //# sourceMappingURL=function.js.map

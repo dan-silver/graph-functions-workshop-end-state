@@ -4,7 +4,7 @@ import { queryNumberCalendarEvents, saveUserExtension, removeAllExtensionsOnUser
 
 // Checked it worked in Graph explorer with https://graph.microsoft.com/beta/users?$select=displayName&$expand=extensions
 
-export async function main (context, req) {
+export async function main (context?, req?) {
     if (context) context.log("Starting Azure function!");
 
     // GET /users
@@ -40,4 +40,4 @@ async function getUsers() {
         });
 }
 
-main(null, null);
+main();

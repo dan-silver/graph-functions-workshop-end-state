@@ -45,5 +45,5 @@ function getUsers() {
         });
     });
 }
-main(null, null);
+main();
 //# sourceMappingURL=function.js.map
