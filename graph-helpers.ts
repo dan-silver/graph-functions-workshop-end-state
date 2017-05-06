@@ -30,7 +30,7 @@ export async function sendMailReport(users) {
         subject: "Report on employee calendars",
         toRecipients: [{
             emailAddress: {
-                address: "dansil@microsoft.com"
+                address: "example@example.com"
             }
         }],
         body: {
@@ -108,9 +108,7 @@ export async function queryNumberCalendarEvents(user:User) {
         })
         .get()
         .then((res) => {
-            console.log(res)
-            // return res;
-            return Math.round(Math.random() * 10);
+            return res;
         })
         .catch((e) => {
             debugger;
