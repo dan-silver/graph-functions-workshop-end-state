@@ -20,4 +20,4 @@ export async function main (context?, req?) {
     sendMailReport(users);
 };
 
-main();
+// main();

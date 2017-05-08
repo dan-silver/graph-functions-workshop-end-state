@@ -101,20 +101,19 @@ export async function queryNumberCalendarEvents(user:User) {
     let inOneMonth = new Date(today.getTime() + 30 * 24 * 60 * 60 * 1000);
 
     return client
-        .api(`/users/${user.mail}/calendarview/$count`)
+        .api(`/users/${user.mail}/calendarview/`)
         .query({
             startdatetime: today.toISOString(),
             enddatetime: inOneMonth.toISOString()
         })
         .get()
         .then((res) => {
-            console.log(res)
-            // return res;
-            return Math.round(Math.random() * 10);
+            return res.value.length;
         })
         .catch((e) => {
+            console.log(e);
             debugger;
-            return 0;
+            return -1;
         })
 }
 
