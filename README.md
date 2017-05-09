@@ -25,7 +25,7 @@ This project contains a starting point for developers to deploy Microsoft Graph 
 #### 4. Deploy to Azure Functions
 
 * Create an Azure function app at https://portal.azure.com and create a new 'Function App'
-![create function app by searching](screenshots/azure-function-search.png)
+![create function app by searching](https://github.com/dan-silver/microsoft-graph-azure-functions-starter/raw/master/screenshots/azure-function-search.png)
 ![create function app](screenshots/create-function-app.png)
 * You may need to setup credentials under `Platform Features / Code Deployment / Deployment Credentials`
 * Configure your app to allow Git deployments
